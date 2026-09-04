@@ -112,16 +112,28 @@ p { margin: 0; }
 .btn-whatsapp { border-color: #b5ddd4; color: #006c61; background: #f1fbf8; }
 .btn-whatsapp:hover { background: #e4f6f1; }
 
-.hero-visual { position: relative; min-height: 390px; display: grid; align-items: center; }
-.hero-visual::before { content: ''; position: absolute; inset: 18px 0 16px 15px; border: 1px solid var(--line); background: var(--white); }
-.hero-visual::after { content: ''; position: absolute; right: -40px; top: 16%; width: 120px; height: 120px; border-top: 1px solid var(--teal); border-right: 1px solid var(--teal); opacity: .45; }
-.hero-panel { position: relative; z-index: 1; margin-left: 42px; padding: 32px 30px; width: min(100%, 440px); background: var(--navy); color: #fff; box-shadow: var(--shadow); }
+.hero-visual { position: relative; min-height: 460px; display: grid; align-items: center; overflow: hidden; }
+.hero-visual::before { content: ''; position: absolute; inset: 18px 0 16px 15px; background-image: linear-gradient(135deg, rgba(16,26,75,.55) 0%, rgba(16,26,75,.15) 55%, rgba(0,138,120,.25) 100%), url('assets/photos/hero-lab.jpg'); background-size: cover; background-position: center; border: 1px solid var(--line); }
+.hero-visual::after { content: ''; position: absolute; right: -40px; top: 16%; width: 120px; height: 120px; border-top: 1px solid var(--teal); border-right: 1px solid var(--teal); opacity: .45; z-index: 2; }
+.hero-panel { position: relative; z-index: 1; margin-left: 42px; margin-top: 40px; margin-bottom: 40px; padding: 32px 30px; width: min(100%, 420px); background: var(--navy); color: #fff; box-shadow: var(--shadow); }
 .hero-panel img { width: 170px; background: #fff; padding: 10px; margin-bottom: 28px; }
 .hero-panel h2 { color: #fff; font-size: 31px; max-width: 300px; }
 .hero-panel p { margin-top: 15px; color: rgba(255,255,255,.74); font-size: 14px; }
 .hero-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; padding-top: 21px; border-top: 1px solid rgba(255,255,255,.2); }
 .hero-meta strong { display: block; color: #8ee0d1; font-size: 20px; font-family: 'Space Grotesk', sans-serif; }
 .hero-meta span { display: block; margin-top: 3px; color: rgba(255,255,255,.66); font-size: 10px; line-height: 1.35; text-transform: uppercase; letter-spacing: .06em; }
+
+.imagery-band { position: relative; overflow: hidden; background: var(--navy); border-bottom: 1px solid var(--line); }
+.imagery-band .imagery-inner { position: relative; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 0; min-height: 340px; align-items: stretch; }
+.imagery-band .imagery-photo { position: relative; overflow: hidden; }
+.imagery-band .imagery-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.imagery-band .imagery-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(16,26,75,0) 60%, rgba(16,26,75,.75) 100%); pointer-events: none; }
+.imagery-band .imagery-copy { padding: 55px 55px 55px 50px; color: #fff; display: flex; flex-direction: column; justify-content: center; }
+.imagery-band .imagery-copy .eyebrow { color: #8ee0d1; }
+.imagery-band .imagery-copy h2 { color: #fff; max-width: 480px; }
+.imagery-band .imagery-copy p { margin-top: 18px; color: rgba(255,255,255,.75); max-width: 460px; font-size: 15px; }
+.imagery-band .imagery-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.imagery-band .imagery-tags span { padding: 8px 12px; border: 1px solid rgba(255,255,255,.28); color: rgba(255,255,255,.86); font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
 
 .stat-strip { background: var(--white); border-bottom: 1px solid var(--line); }
 .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
@@ -169,7 +181,17 @@ p { margin: 0; }
 .cta-band h2 { font-size: clamp(30px, 4vw, 46px); max-width: 650px; }
 .cta-band p { margin-top: 12px; color: var(--muted); }
 
-.page-hero { padding: 71px 0 63px; border-bottom: 1px solid var(--line); background: #f2f7f6; }
+.page-hero { padding: 71px 0 63px; border-bottom: 1px solid var(--line); background: #f2f7f6; position: relative; overflow: hidden; }
+.page-hero.page-hero-image { color: #fff; background: var(--navy); }
+.page-hero.page-hero-image::before { content: ''; position: absolute; inset: 0; background-size: cover; background-position: center; opacity: .35; z-index: 0; }
+.page-hero.page-hero-image::after { content: ''; position: absolute; inset: 0; background: linear-gradient(120deg, rgba(16,26,75,.86) 0%, rgba(16,26,75,.6) 55%, rgba(0,138,120,.55) 100%); z-index: 0; }
+.page-hero.page-hero-image .container { position: relative; z-index: 1; }
+.page-hero.page-hero-image h1, .page-hero.page-hero-image .page-index { color: #fff; }
+.page-hero.page-hero-image .eyebrow { color: #8ee0d1; }
+.page-hero.page-hero-image p { color: rgba(255,255,255,.85); }
+.page-hero.page-hero-image .page-index span { color: rgba(255,255,255,.55); }
+.page-hero.page-hero-products::before { background-image: url('assets/photos/pharmacy-supply.jpg'); }
+.page-hero.page-hero-about::before { background-image: url('assets/photos/lab-research.jpg'); background-position: center 30%; }
 .page-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, .55fr); gap: 50px; align-items: end; }
 .page-hero h1 { font-size: clamp(43px, 6vw, 68px); max-width: 800px; }
 .page-hero p { margin-top: 20px; max-width: 660px; color: var(--muted); font-size: 17px; }
@@ -324,6 +346,10 @@ p { margin: 0; }
   .category-card { min-height: 200px; }
   .why-grid { grid-template-columns: 1fr; }
   .why-item, .why-item:nth-child(odd), .why-item:nth-child(even) { margin-right: 0; padding: 24px 0; border-right: 0; }
+  .imagery-band .imagery-inner { grid-template-columns: 1fr; }
+  .imagery-band .imagery-photo { min-height: 240px; }
+  .imagery-band .imagery-photo::after { background: linear-gradient(180deg, rgba(16,26,75,0) 55%, rgba(16,26,75,.75) 100%); }
+  .imagery-band .imagery-copy { padding: 34px 22px; }
   .cta-band h2 { font-size: 34px; }
   .cta-band .hero-actions { margin-top: 23px; }
   .page-hero { padding: 51px 0 46px; }
