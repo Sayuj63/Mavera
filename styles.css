@@ -85,22 +85,22 @@ button { cursor: pointer; }
   background: var(--accent);
 }
 
-.nav-cta {
+.main-nav a.nav-cta {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 22px;
+  gap: 8px;
+  height: 40px;
+  padding: 0 20px;
   color: #fff;
   background: var(--navy);
   font-size: 13px;
   font-weight: 500;
   letter-spacing: .01em;
   border-radius: var(--radius);
+  line-height: 1;
 }
-.main-nav a.nav-cta,
 .main-nav a.nav-cta:hover,
-.main-nav a.nav-cta[aria-current='page'] { color: #fff; }
-.main-nav a.nav-cta:hover { background: var(--navy-2); }
+.main-nav a.nav-cta[aria-current='page'] { color: #fff; background: var(--navy-2); }
 .main-nav a.nav-cta::after { display: none; }
 
 .menu-toggle { display: none; border: 0; background: transparent; padding: 8px; color: var(--ink); }
