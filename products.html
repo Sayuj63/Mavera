@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Product Portfolio | Mavera Impex</title>
-  <meta name="description" content="Explore Mavera Impex capabilities across APIs, finished formulations, OTC products, medical devices and surgical supplies." />
+  <meta name="description" content="Explore the Mavera Impex portfolio: APIs, excipients, ready-to-fill pellets &amp; MUPS, finished formulations and medical &amp; healthcare supplies." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-page="products">
@@ -22,55 +22,51 @@
     <section class="section"><div class="container">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Multi-range capability</p>
-          <h2>Find the right starting point.</h2>
+          <p class="eyebrow">Our product portfolio</p>
+          <h2>From active ingredients to ready-to-dispense formats.</h2>
         </div>
-        <p>Tell us what you are looking for, even if it is not yet fully specified. Our team can help shape the brief.</p>
+        <p>We source and facilitate the supply of APIs, Excipients, Ready-to-Fill Pellets &amp; MUPS, Finished Formulations and Medical Supplies — with a focus on quality, compliance, documentation and dependable supply.</p>
       </div>
       <div class="portfolio-grid">
-        <article class="portfolio-card" id="apis">
+        <a class="portfolio-card" href="#apis" data-jump="apis">
           <span class="number">Category 01</span>
-          <h3>APIs &amp; bulk drugs</h3>
-          <p>Active pharmaceutical ingredients and bulk drug solutions for regulated production and distribution.</p>
-          <ul class="portfolio-list">
-            <li>Therapeutic APIs</li>
-            <li>Intermediates</li>
-            <li>Bulk drug substances</li>
-          </ul>
-        </article>
-        <article class="portfolio-card" id="formulations">
+          <h3>APIs</h3>
+          <p>Active pharmaceutical ingredients from accredited, GMP-compliant manufacturers in India and China.</p>
+          <span class="card-arrow">30 products listed →</span>
+        </a>
+        <a class="portfolio-card" href="#excipients" data-jump="excipients">
           <span class="number">Category 02</span>
-          <h3>Finished formulations</h3>
-          <p>Market-ready dosage forms sourced with commercial, documentation and registration requirements in view.</p>
-          <ul class="portfolio-list">
-            <li>Tablets</li>
-            <li>Capsules</li>
-            <li>Injectables</li>
-          </ul>
-        </article>
-        <article class="portfolio-card" id="otc">
+          <h3>Excipients</h3>
+          <p>Pharmacopoeial-grade excipients for tablet, capsule and pellet manufacturing.</p>
+          <span class="card-arrow">9 products listed →</span>
+        </a>
+        <a class="portfolio-card" href="#pellets" data-jump="pellets">
           <span class="number">Category 03</span>
-          <h3>OTC &amp; wellness products</h3>
-          <p>Everyday health and wellness products for retail, pharmacy and institutional channels.</p>
-          <ul class="portfolio-list">
-            <li>OTC medicines</li>
-            <li>Vitamins</li>
-            <li>Consumer wellness</li>
-          </ul>
-        </article>
-        <article class="portfolio-card" id="supplies">
+          <h3>Ready-to-Fill Pellets</h3>
+          <p>Ready-to-fill pellets for capsule manufacturing, matched to your molecule and strength.</p>
+          <span class="card-arrow">Range on request →</span>
+        </a>
+        <a class="portfolio-card" href="#mups" data-jump="mups">
           <span class="number">Category 04</span>
-          <h3>Medical &amp; surgical supplies</h3>
-          <p>Specification-led products that support hospitals, clinics and care delivery teams.</p>
-          <ul class="portfolio-list">
-            <li>Medical devices</li>
-            <li>Surgical consumables</li>
-            <li>Protective supplies</li>
-          </ul>
-        </article>
+          <h3>MUPS</h3>
+          <p>Multiple-unit pellet systems (MUPS) for modern tablet formulations.</p>
+          <span class="card-arrow">Range on request →</span>
+        </a>
+        <a class="portfolio-card" href="#formulations" data-jump="formulations">
+          <span class="number">Category 05</span>
+          <h3>Finished Formulations</h3>
+          <p>Lyophilized and anaesthesia injections, other injectables and ophthalmic products.</p>
+          <span class="card-arrow">54 products listed →</span>
+        </a>
+        <a class="portfolio-card" href="#supplies" data-jump="supplies">
+          <span class="number">Category 06</span>
+          <h3>Medical &amp; Healthcare Supplies</h3>
+          <p>Hospital consumables, devices, bandages and dressings for care delivery teams.</p>
+          <span class="card-arrow">20 products listed →</span>
+        </a>
       </div>
 
-      <div class="directory">
+      <div class="directory" id="directory">
         <div class="directory-head">
           <div>
             <p class="eyebrow">Product directory</p>
@@ -78,27 +74,225 @@
           </div>
           <div class="search-box">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-            <input type="search" placeholder="Search category or dosage form" aria-label="Search product directory" data-product-search />
+            <input type="search" placeholder="Search product, molecule or category" aria-label="Search product directory" data-product-search />
           </div>
         </div>
-        <div class="product-table-wrap">
-          <table class="product-table">
-            <thead>
-              <tr><th>Category</th><th>Examples</th><th>Supply context</th><th>Availability</th></tr>
-            </thead>
-            <tbody>
-              <tr data-product-row><td>APIs &amp; bulk drugs</td><td>Therapeutic ingredients, intermediates</td><td>Manufacturing / distribution</td><td class="availability">On request</td></tr>
-              <tr data-product-row><td>Finished formulations</td><td>Tablets, capsules, injectables</td><td>Market supply / institutional</td><td class="availability">On request</td></tr>
-              <tr data-product-row><td>OTC &amp; wellness</td><td>OTC medicines, vitamins, supplements</td><td>Pharmacy / retail</td><td class="availability">On request</td></tr>
-              <tr data-product-row><td>Medical &amp; surgical supplies</td><td>Devices, consumables, PPE</td><td>Hospital / clinic</td><td class="availability">On request</td></tr>
-            </tbody>
-          </table>
-          <div class="empty-state">No category matches that search. Send an inquiry and we will check the wider network.</div>
+        <div class="dir-chips" role="group" aria-label="Filter by category"><button type="button" class="dir-chip" data-filter="all" aria-pressed="true">All</button><button type="button" class="dir-chip" data-filter="apis" aria-pressed="false">APIs</button><button type="button" class="dir-chip" data-filter="excipients" aria-pressed="false">Excipients</button><button type="button" class="dir-chip" data-filter="pellets" aria-pressed="false">Ready-to-Fill Pellets</button><button type="button" class="dir-chip" data-filter="mups" aria-pressed="false">MUPS</button><button type="button" class="dir-chip" data-filter="formulations" aria-pressed="false">Finished Formulations</button><button type="button" class="dir-chip" data-filter="supplies" aria-pressed="false">Medical &amp; Healthcare Supplies</button></div>
+        <div class="dir-groups">
+        <section class="dir-group" id="apis" data-group="apis">
+          <header class="dir-group-head">
+            <div><span class="number">Category 01</span><h3>APIs</h3></div>
+            <span class="dir-count">30 products</span>
+          </header>
+          <div class="dir-sub" data-sub>
+            <h4>Cardiovascular &amp; antidiabetic</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Carvedilol</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Dapagliflozin</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Gliclazide</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Glibenclamide</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Lisinopril</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Losartan Potassium</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Metoprolol Succinate</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Rosuvastatin Calcium</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Sitagliptin Phosphate</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Telmisartan</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Teneligliptin</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Vildagliptin</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Voglibose</span></li>
+            </ul>
+          </div>
+          <div class="dir-sub" data-sub>
+            <h4>Anti-infective &amp; antimalarial</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Artemether</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Artesunate Sterile</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Favipiravir</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Fluconazole</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Itraconazole</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ketoconazole</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Luliconazole</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Lumefantrine</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Pyrazinamide</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ethambutol</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Quinine Di HCl</span></li>
+            </ul>
+          </div>
+          <div class="dir-sub" data-sub>
+            <h4>Ophthalmic</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Loteprednol Etabonate</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Nepafenac</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Brinzolamide</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Olopatadine HCl</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Dorzolamide HCl</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Brimonidine Tartrate</span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="dir-group" id="excipients" data-group="excipients">
+          <header class="dir-group-head">
+            <div><span class="number">Category 02</span><h3>Excipients</h3></div>
+            <span class="dir-count">9 products</span>
+          </header>
+          <div class="dir-sub" data-sub>
+            
+            <ul class="dir-list dir-list-wide">
+              <li class="dir-item" data-item><span class="dir-name">Microcrystalline Cellulose</span><ul class="dir-subs"><li>Accel 101, 102, 103, 105, 112, 200, 301, 302, 12 – Spray Dried</li><li>Vincel 101, 102, 112, 200 – Bulk Dried</li></ul><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">MCC Spheres – Accel 100, 200, 350, 500, 700 &amp; 1000</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">Microcrystalline Cellulose &amp; Carboxy Methyl Cellulose (MCC-RC 591)</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">Silicified Microcrystalline Cellulose – Accel 50 &amp; 90</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">Powdered Cellulose</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">Magnesium Stearate</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">Croscarmellose Sodium</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">Sodium Starch Glycolate</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span><span class="dir-tag dir-tag-new">New product development</span></span></li>
+              <li class="dir-item" data-item><span class="dir-name">Carboxy Methyl Cellulose</span><span class="dir-tags"><span class="dir-tag">IP/BP/USP/EP/JP</span><span class="dir-tag dir-tag-new">New product development</span></span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="dir-group" id="pellets" data-group="pellets">
+          <header class="dir-group-head">
+            <div><span class="number">Category 03</span><h3>Ready-to-Fill Pellets</h3></div>
+            <span class="dir-count">On request</span>
+          </header>
+          <div class="dir-request" data-item>
+            <p>Our ready-to-fill pellet range is shared on request. Tell us the molecule, strength and release profile you need and we will match it with an accredited manufacturer.</p>
+            <a class="btn btn-primary btn-arrow" href="#quote" data-enquire="Ready-to-Fill Pellets">Request the Ready-to-Fill Pellets list</a>
+          </div>
+        </section>
+        <section class="dir-group" id="mups" data-group="mups">
+          <header class="dir-group-head">
+            <div><span class="number">Category 04</span><h3>MUPS</h3></div>
+            <span class="dir-count">On request</span>
+          </header>
+          <div class="dir-request" data-item>
+            <p>Our MUPS range is shared on request. Tell us the molecule, strength and release profile you need and we will match it with an accredited manufacturer.</p>
+            <a class="btn btn-primary btn-arrow" href="#quote" data-enquire="MUPS">Request the MUPS list</a>
+          </div>
+        </section>
+        <section class="dir-group" id="formulations" data-group="formulations">
+          <header class="dir-group-head">
+            <div><span class="number">Category 05</span><h3>Finished Formulations</h3></div>
+            <span class="dir-count">54 products</span>
+          </header>
+          <div class="dir-sub" data-sub>
+            <h4>Lyophilized Injections</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Acetazolamide Injection 500 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Aciclovir for Injection USP 250 mg, 500 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Amphotericin-B for Injection USP 50 mg, 100 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Azithromycin for Injection 500 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Clarithromycin for Injection 500 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Colistimethate Injection 100,000 IU, 200,000 IU</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Esomeprazole Sodium Powder for Injection 40 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Erythromycin Lactobionate Injection 500 mg, 1 gm</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ganciclovir for Injection 500 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Hydralazine for Injection 20 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ketoprofen for Injection 100 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Olanzapine Injection 10 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Omeprazole for Injection 40 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Pantoprazole for Injection 40 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Pralidoxime Chloride for Injection 500 mg, 1 gm</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Rabeprazole Sodium for Injection 20 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Succinylcholine Chloride for Injection USP 100 mg, 500 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Thiopental Injection 500 mg, 1 gm</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Vancomycin Hydrochloride Sterile for Injection USP 500 mg, 1 gm</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Vecuronium Bromide for Injection 4 mg, 10 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Voriconazole for Injection 200 mg</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Zoledronic Acid Injection 4 mg</span></li>
+            </ul>
+          </div>
+          <div class="dir-sub" data-sub>
+            <h4>Anaesthesia Products</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Atracurium Besylate Injection USP 1%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Bupivacaine Hydrochloride in Dextrose Injection USP (Heavy) 0.5% + 8% (Sterile Pack)</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Bupivacaine Injection BP 0.5% (With &amp; Without Preservative)</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ketamine Hydrochloride Injection USP 1%, 5%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Lidocaine Gel BP 2%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Lidocaine Injection BP 1%, 2%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Pancuronium Bromide Injection 2 mg / ml</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Rocuronium Bromide Injection 1%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Suxamethonium Chloride Injection BP 5%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Thiopentone Sodium for Injection BP 0.5 gm, 1 gm</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Vecuronium Bromide for Injection 4 mg, 10 mg</span></li>
+            </ul>
+          </div>
+          <div class="dir-sub" data-sub>
+            <h4>Other Injectables</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Haloperidol Decanoate Injection 5% (Depot - Oily)</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Haloperidol Injection BP 0.5%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Artemether Injection 40 mg / ml, 80 mg / ml, 100 mg / ml</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Artesunate Injection 30 mg, 60 mg, 120 mg (Combipack with Diluents)</span></li>
+            </ul>
+          </div>
+          <div class="dir-sub" data-sub>
+            <h4>Ophthalmic Products</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Antioxidant Eye Drops with N-Acetyl-Carnosine</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Artificial Tears 0.3% Hypromellose</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Atropine Eye Drops BP 0.5%, 1%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Brimonidine Tartrate Eye Drops 0.2%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Brimonidine Tartrate + Timolol Maleate Eye Drops (0.2% + 0.5%)</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Brinzolamide Eye Drops 1% w/v</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Betamethasone Eye Drops BP 0.1%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Betamethasone + Neomycin Eye / Ear Drops 0.1% + 0.5%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Betaxolol Eye Drops BP 0.25% / 0.5% w/v</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Chloramphenicol Ophthalmic Solution USP 0.5%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ciprofloxacin and Dexamethasone Eye Drops 0.3% + 0.1%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ciprofloxacin Eye / Ear Drops 0.3%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Dexamethasone Sodium Phosphate Ophthalmic Solution USP (Dexamethasone Eye / Ear Drops) 0.1%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Dexamethasone &amp; Neomycin Eye Drops</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Diclofenac Sodium Ophthalmic Solution 0.1%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Dorzolamide Eye Drops 2%</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Dorzolamide HCl + Timolol Maleate Eye Drops (20 mg + 5 mg)</span></li>
+            </ul>
+          </div>
+          <p class="dir-note">Selected products shown. The complete finished-formulation list is available on request. <a href="#quote" data-enquire="Finished Formulations">Ask for the full list →</a></p>
+        </section>
+        <section class="dir-group" id="supplies" data-group="supplies">
+          <header class="dir-group-head">
+            <div><span class="number">Category 06</span><h3>Medical &amp; Healthcare Supplies</h3></div>
+            <span class="dir-count">20 products</span>
+          </header>
+          <div class="dir-sub" data-sub>
+            <h4>Our main products</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Infusion Sets</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Blood Administration Sets</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Disposable Syringes</span></li>
+              <li class="dir-item" data-item><span class="dir-name">I.V. Cannula</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Urine Collection Bags</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Surgical Latex Gloves</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Umbilical Cord Clamp</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Suction Catheter</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Ryle’s / Feeding Tube</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Dial Flow Regulators</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Oxygen Mask</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Nebulizer Mask</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Nasal Cannula</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Male External Urine Catheter (Condom Catheter)</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Measured Volume Set</span></li>
+            </ul>
+          </div>
+          <div class="dir-sub" data-sub>
+            <h4>Orthopedics, Dressings &amp; External Preparations</h4>
+            <ul class="dir-list">
+              <li class="dir-item" data-item><span class="dir-name">Plaster of Paris Bandages</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Elastic Adhesive Bandages</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Cotton Crepe Bandages</span></li>
+              <li class="dir-item" data-item><span class="dir-name">Soft Roll (Cast Padding)</span></li>
+              <li class="dir-item" data-item><span class="dir-name">I.V. Cannula Fixator</span></li>
+            </ul>
+          </div>
+        </section>
         </div>
+        <div class="empty-state">No product matches that search. Send an inquiry and we will check the wider network.</div>
       </div>
     </div></section>
 
-    <section class="section section-alt"><div class="container quote-layout">
+    <section class="section section-alt" id="quote"><div class="container quote-layout">
       <div class="quote-copy">
         <p class="eyebrow">Request a quote</p>
         <h2>Bring us the brief. We will move it forward.</h2>
