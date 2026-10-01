@@ -23,8 +23,8 @@ const navItems = [
   ['contact', 'Contact Us', 'contact.html'],
 ];
 
-// Drop the brochure PDF at this path; until it exists the button falls back to a WhatsApp request.
-const BROCHURE_URL = 'assets/Mavera-Impex-Brochure.pdf';
+// Product list PDF stands in for the brochure until the client sends one; if the file is missing the button falls back to a WhatsApp request.
+const BROCHURE_URL = 'assets/Mavera-Impex-Product-List.pdf';
 const BROCHURE_FALLBACK = 'https://wa.me/918169173699?text=Hello%20Mavera%20Impex%2C%20please%20share%20your%20product%20brochure.';
 
 // Languages offered by Google Website Translator (code:name).
